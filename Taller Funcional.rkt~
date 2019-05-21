@@ -191,13 +191,13 @@ Salida: el arbol sin el elemento indicado
         ((< elemento (raiz arb)) (arbol (raiz arb) (eliminar elemento (hijo_izq arb)) (hijo_der arb)))
         ((> elemento (raiz arb)) (arbol (raiz arb) (hijo_izq arb) (eliminar elemento (hijo_der arb))))
         
-        ;nodo sin hijos
+        ;caso sin hijos
         ((and (null? (hijo_izq arb))(null? (hijo_der arb)))'() )
 
-        ;nodo sin hijo izquierdo
+        ;caso sin hijo izquierdo
         ((null? (hijo_izq arb)) (hijo_der arb))
 
-        ;nodo sin hijo derecho
+        ;caso sin hijo derecho
         ((null? (hijo_der arb)) (hijo_izq arb))
 
         ;;nodo tiene 2 hijos
