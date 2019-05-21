@@ -200,7 +200,7 @@ Salida: el arbol sin el elemento indicado
         ;nodo sin hijo derecho
         ((null? (hijo_der arb)) (hijo_izq arb))
 
-        ;;nodo tiene 2 hijos
+        ;nodo tiene 2 hijos
         (else (arbol (mayor (hijo_izq arb)) (eliminar (mayor (hijo_izq arb))(hijo_izq arb))(hijo_der arb)))
         )
   )
